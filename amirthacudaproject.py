@@ -32,7 +32,7 @@ frame_id = 0
 saved_frames = 0
 
 if not ret:
-    print("❌ Error reading the video.")
+    print(" Error reading the video.")
 else:
     start_time = time.time()  # ⏱️ Start timing
 
@@ -65,8 +65,8 @@ else:
     end_time = time.time()  # ⏱️ End timing
     total_time = end_time - start_time
 
-    print(f"✅ Extracted {saved_frames} movement frames out of {frame_id} total frames.")
-    print(f"🕒 Time taken to process video: {total_time:.4f} seconds.")
+    print(f" Extracted {saved_frames} movement frames out of {frame_id} total frames.")
+    print(f" Time taken to process video: {total_time:.4f} seconds.")
 
     video_path = "footage.mp4"  # Change if your file name is different
 cap = cv2.VideoCapture(video_path)
@@ -76,7 +76,7 @@ frame_id = 0
 saved_frames = 0
 
 if not ret:
-    print("❌ Error reading the video.")
+    print(" Error reading the video.")
 else:
     start_time = time.time()  # ⏱️ Start timing
 
@@ -109,8 +109,8 @@ else:
     end_time = time.time()  # ⏱️ End timing
     total_time = end_time - start_time
 
-    print(f"✅ Extracted {saved_frames} movement frames out of {frame_id} total frames.")
-    print(f"🕒 Time taken to process video: {total_time:.4f} seconds.")
+    print(f"Extracted {saved_frames} movement frames out of {frame_id} total frames.")
+    print(f" Time taken to process video: {total_time:.4f} seconds.")
 
 import glob
 image_files = sorted(glob.glob(f"{output_dir}/*.jpg"))[:3]
