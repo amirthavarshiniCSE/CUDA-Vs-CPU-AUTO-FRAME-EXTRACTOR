@@ -1,5 +1,5 @@
-The **Motion Frame Extractor** is a Google Colab–ready project that extracts only the frames containing movement from a video using OpenCV. 
-It works by comparing consecutive frames, identifying changes, and saving only those with significant motion. The notebook allows users to upload a video, process it efficiently, and display the first few motion frames. 
-It also measures the total time taken for processing and provides an option to download all saved frames as a ZIP file.
-This tool is ideal for video analysis tasks where detecting and isolating motion is important. 
-Future improvements could include GPU acceleration (CUDA), keyframe summarization, and real-time webcam support.
+The **CPU-Based Motion Frame Extractor** is a Google Colab–ready project developed for detecting and saving only the frames from a video that contain motion, using the OpenCV library. 
+This version is designed to operate entirely on the CPU, making it suitable for environments without access to GPU acceleration. The motion detection works by comparing pixel differences between consecutive frames to identify significant changes, which are then saved as individual images.
+The notebook allows users to upload a video, processes it efficiently, displays a preview of the first few motion frames, measures the total time taken for processing, and offers the option to download all detected frames in a ZIP file. 
+This CPU-based implementation provides a practical and accessible solution for motion-based video analysis, and in this project, it is used as a baseline for performance comparison with a GPU-accelerated version. 
+The comparison focuses on key aspects such as processing speed, accuracy of detection, and system efficiency, helping to evaluate the trade-offs between CPU and GPU-based frame extraction techniques.
